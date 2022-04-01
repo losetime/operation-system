@@ -1,0 +1,19 @@
+{
+    "remote.extensionKind": {
+        "pub.name": [
+            "ui"
+        ]
+    },
+    // emmet配置
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact" // 支持jsx提示
+    },
+    "files.associations": {
+        "*.jsx": "javascriptreact",
+        "*.tsx": "typescriptreact"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true // 保存时自动修复错误
+    },
+    "files.trimTrailingWhitespace": true
+}

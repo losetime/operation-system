@@ -1,0 +1,90 @@
+.driver-wrapper {
+    width: 100%;
+    height: 100%;
+    ._search-handle-wrap {
+        .search-handle-wrap-top {
+            margin-bottom: 10px;
+        }
+        .search-handle-wrap-bottom {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+    .table-wrap {
+        height: calc(100% - 118px);
+        padding: 14px;
+        .table-body-calc(346px);
+    }
+}
+
+.driver-detail-dialog-wrap {
+    width: 100%;
+    .form-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        line-height: 16px;
+        font-size: 16px;
+        .form-title-content {
+            font-weight: bold;
+            color: @fontColorDark;
+        }
+        .authentication-success-status {
+            text-align: right;
+            color: #0BB653;
+            font-weight: normal;
+        }
+        .authentication-error-status {
+            text-align: right;
+            color: #FF5A00;
+            font-weight: normal;
+        }
+    }
+    .ant-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .ant-row {
+            width: 45%;
+            .ant-form-item-label {
+                text-align: left;
+            }
+            .ant-form-item-control-input-content {
+                display: flex;
+                .ant-picker {
+                    width: 100%;
+                }
+                .placeholder-span {
+                    display: inline-block;
+                    width: 30px;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+            }
+            .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+                 content: '';
+             }
+            .item-label {
+                display: flex;
+                .item-label-symbol {
+                    color: red;
+                    margin-left: 4px;
+                }
+            }
+        }
+        .ant-col {
+            height: 32px;
+        }
+        .ant-form-item-with-help {
+            height: 56px;
+        }
+    }
+    .upload-image-wrap {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+}

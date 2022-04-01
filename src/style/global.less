@@ -1,0 +1,180 @@
+@fontSize14: 14px;
+@fontSize16: 16px;
+@fontSize18: 18px;
+@fontColorLight: #ffffff;
+@fontColorDark: #000000;
+@bgColorLight: #ffffff;
+@bgColorDark: #000000;
+@headerBgColor: #628CF7;
+@logoBgColor: #5178DF;
+@sidebarBgColor: #FFFFFF;
+@rowActiveBgColor: #DEE6F8;
+@tableHeaderBgColor:#EAEEF7;
+@tableHeaderFontColor: #8896C4;
+@tipTextColor: #F84608; // 提示文字颜色
+
+#root {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #F1F3FA;
+    .app-wrapper{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        .global-spin-wrap {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255,255,255,0.5);
+        }
+    }
+    .router-view-wrap{
+        padding: 14px;
+    }
+}
+
+// 表格操作区域布局
+._search-handle-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: @bgColorLight;
+    padding: 14px;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    .ant-form-item {
+        width:150px;
+    }
+    .ant-picker {
+        width: 150px;
+    }
+    .search-btn {
+        width: 80px;
+    }
+    .handle-wrap {
+        display: flex;
+        align-items: center;
+        .ant-btn {
+            margin-left: 20px;
+        }
+    }
+}
+
+// 表格本身布局
+._table-wrap {
+    background-color: @bgColorLight;
+    .ant-table{
+        font-size:12px;
+        .active-current-row {
+            .ant-table-cell {
+                background-color: @rowActiveBgColor;
+            }
+        }
+        .ant-table-tbody>.ant-table-row:hover>td{
+            background-color:@rowActiveBgColor;
+        }
+        .row-zebra-crossing {
+            .ant-table-cell {
+                background-color: #F6F8FB;
+            }
+        }
+        .ant-table-header {
+            .ant-table-cell {
+                background-color: @tableHeaderBgColor;
+                color: @tableHeaderFontColor;
+                font-weight: bold;
+            }
+        }
+    }
+    .ant-checkbox-wrapper {
+        .ant-checkbox{
+            .ant-checkbox-inner {
+                width: 14px;
+                height: 14px;
+            }
+        }
+        .ant-checkbox-indeterminate {
+            .ant-checkbox-inner {
+                width: 14px;
+                height: 14px;
+                background-color: #4976E6;
+            }
+            .ant-checkbox-inner::after {
+                width: 6px;
+                height: 2px;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+}
+
+// 设置表格body高度
+.table-body-calc(@tbh) {
+    // 设置表格body高度
+    .ant-table-body {
+        overflow: auto scroll!important;
+        height: calc(100vh - @tbh)!important;
+        // 修改表格排序之后的背景
+        .ant-table-column-sort {
+            background-color: @fontColorLight;
+        }
+    }
+    .ant-table-empty .ant-table-tbody > tr.ant-table-placeholder {
+        height: calc(100vh - @tbh)!important;
+        .ant-table-cell {
+            .ant-table-expanded-row-fixed {
+                top: 38%;
+            }
+        }
+    }
+}
+
+// 设置表格body固定高度
+.table-body-fixed(@tbh) {
+    // 设置表格body高度
+    .ant-table-body {
+        overflow: auto scroll!important;
+        height: @tbh!important;
+        // 修改表格排序之后的背景
+        .ant-table-column-sort {
+            background-color: @fontColorLight;
+        }
+    }
+    .ant-table-empty .ant-table-tbody > tr.ant-table-placeholder {
+        height: @tbh!important;
+        .ant-table-cell {
+            .ant-table-expanded-row-fixed {
+                top: 38%;
+            }
+        }
+    }
+}
+
+.ant-popover {
+    .popover-item {
+        margin-bottom: 5px;
+        .ant-alert-message {
+            font-size:12px;
+        }
+    }
+}
+
+// 解决时间选择器里放置【长期】选项的问题
+.ant-picker-dropdown {
+    .ant-picker-footer {
+        position: relative;
+        .ant-picker-footer-extra {
+            position: absolute;
+            top: 0;
+            left: -6px;
+        }
+    }
+}

@@ -1,0 +1,278 @@
+@border-color: #CCCCCC;
+
+.confirm-invoice-info-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    .tax-number-wrap {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        color: #333333;
+    }
+    .invoice-info-timeline-wrap {
+        .ant-timeline {
+            .ant-timeline-item-tail {
+                border-left: 2px dashed #DDDDDD;
+            }
+            .ant-timeline-item-head {
+                background-color: rgba(0,0,0, 0);
+            }
+        }
+        
+        .invoice-wrap {
+            background-color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+          .invoice-title-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            .invoice-title {
+              display: flex;
+              align-items: center;
+              .invoice-title-text {
+                margin-right: 20px;
+                font-size: 18px;
+                color: #333333;
+                font-weight: bold;
+              }
+              .invoice-info-tip {
+                margin-left: 20px;
+                color: @tipTextColor;
+                font-size: 14px;
+              }
+            }
+          }
+          .upload-wrap {
+            margin-bottom: 20px;
+          }
+          .invoice-form {
+            .ant-form {
+              display: flex;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              .ant-form-item {
+                width: 48%;
+                .ant-form-item-label {
+                  width: 80px;
+                }
+              }
+              .mailing-address {
+                width: 100%;
+              }
+            }
+            .capital-wrap {
+              margin-bottom: 24px;
+              font-size: 14px;
+              color: #999999;
+              .capital-title {
+                display: inline-block;
+                width: 13%;
+              }
+            }
+            .invoice-tax-amount {
+              .ant-input {
+                color: @tipTextColor;
+              }
+            }
+            .rewrite-margin {
+              margin-bottom:5px;
+            }
+          }
+          .print-table-wrap {
+            margin-bottom: 20px;
+            .editable-cell {
+              position: relative;
+            }
+            
+            .editable-cell-value-wrap {
+              cursor: pointer;
+            }
+            
+            .editable-row:hover .editable-cell-value-wrap {
+              position: absolute;
+              border: 1px solid #d9d9d9;
+              border-radius: 4px;
+              padding-left: 6px;
+              width: 90%;
+              height: 32px;
+              line-height: 32px;
+              box-sizing: border-box;
+            }
+            
+            [data-theme='dark'] .editable-row:hover .editable-cell-value-wrap {
+              border: 1px solid #434343;
+            }
+          }
+          .handle-wrap {
+            display: flex;
+            justify-content: flex-end;
+          }
+          .handle-start-wrap {
+            display: flex;
+            justify-content: flex-start;
+          }
+          .upload-wrap {
+            width: 100%;
+            .upload-content {
+              /deep/ .el-upload {
+                width: 100%;
+                .el-upload-dragger {
+                  width: 100%;
+                  height: 300px;
+                }
+                .upload-tip {
+                  height: 100%;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                }
+              }
+            }
+            .show-upload-content {
+              width: 100%;
+              height: 300px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1px dashed #d9d9d9;
+              border-radius: 5px;
+              overflow: hidden;
+              img {
+                width: 450px;
+                height: 100%;
+              }
+            }
+          }
+          .upload-handle {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 15px;
+          }
+        }
+      }
+}
+
+.abandoned-confirm-content {
+  display: flex;
+  flex-direction: column;
+  span {
+    margin: 2px 0;
+  }
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+/**
+* 结算单样式
+*/
+.statement-wrapper {
+  font-size: 14px;
+  .statistics-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    .statistics-text {
+      span {
+        margin-right: 20px;
+        color:#B8B8B8;
+      }
+    }
+  }
+  .table-wrapper {
+    .ant-table-tbody {
+      .ant-table-cell {
+        word-break: break-all;
+        word-wrap:break-word;
+        .col-wrap {
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-around;
+          .item-wrap{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            .item-span {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              width: 80px;
+            }
+            .ant-input,
+            .ant-picker {
+              width: 50%;
+            }
+          }
+        }
+        .period-wrap {
+          display: flex;
+          flex-direction: column;
+          .ant-picker {
+            &:last-child {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-handle {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+}
+
+.statement-edit-wrapper {
+  .statement-item-wrap {
+    .form-title {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .statistics-wrap {
+      padding: 10px 10px 10px 0;
+      color: #999999;
+      font-size: 14px;
+    }
+    .form-wrap {
+      .ant-form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .ant-form-item {
+          width: 45%;
+          .ant-form-item-label {
+            text-align: left;
+          }
+          .ant-form-item-control-input-content {
+              display: flex;
+              .ant-picker {
+                  width: 100%;
+              }
+              .placeholder-span {
+                  display: inline-block;
+                  width: 30px;
+                  text-align: center;
+                  margin-top: 5px;
+              }
+          }
+        }
+      }
+    }
+  }
+}

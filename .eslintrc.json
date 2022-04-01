@@ -1,0 +1,58 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "globals": {
+        "$": true,
+        "process": true,
+        "__dirname": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module",
+        "ecmaVersion": 7
+    },
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "react"
+    ],
+    // 0、1、2分别表示不开启检查、警告、错误
+    "rules": {
+        "no-console": 0, // 不禁用console
+        "no-debugger": 2, // 禁用debugger
+        "no-var": 2, // 对var警告
+        "no-trailing-spaces": 1, //一行结束后面有空格就发出警告
+        "no-unused-vars": "off", //关闭eslint未使用变量的约束，打开typescript-eslint的约束 
+        "no-const-assign": 2, //禁止修改const声明的变量
+        "no-dupe-keys": 2, //在创建对象字面量时不允许键重复
+        "no-duplicate-case": 2, //switch中的case标签不能重复
+        "no-dupe-args": 2, //函数参数不能重复
+        "no-empty": 2, //块语句中的内容不能为空
+        "no-func-assign": 2, //禁止重复的函数声明
+        "no-redeclare": 2, //禁止重复声明变量
+        "no-spaced-func": 2, //函数调用时 函数名与()之间不能有空格
+        "no-undef": 2, //不能有未定义的变量
+        "camelcase": 2, //强制驼峰法命名
+        "@typescript-eslint/no-explicit-any": 0, // 特殊情况可将类型显示设置为any
+        "@typescript-eslint/interface-name-prefix": 0, // 允许接口命名以I开头
+        "@typescript-eslint/no-var-requires": 0, // antd中引用style需要用require
+        "@typescript-eslint/no-use-before-define": 0, // mapStateToProps在之前就用到(typeof推断类型)
+        "@typescript-eslint/no-empty-function": 0, // 给函数默认值可以为空"
+        "@typescript-eslint/no-unused-vars": "error"
+    },
+    "settings": {
+        "import/ignore": [
+            "node_modules"
+        ]
+    }
+}

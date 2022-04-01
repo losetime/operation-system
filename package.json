@@ -1,0 +1,78 @@
+{
+  "name": "dev-temp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.2.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^26.0.19",
+    "@types/node": "^14.14.13",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-redux": "^7.1.14",
+    "@typescript-eslint/parser": "^4.10.0",
+    "ahooks": "^2.9.3",
+    "antd": "^4.3.5",
+    "axios": "^0.19.2",
+    "babel-plugin-import": "^1.13.0",
+    "bignumber.js": "^9.0.1",
+    "copy-to-clipboard": "^3.3.1",
+    "customize-cra": "^1.0.0",
+    "dingtalk-jsapi": "^2.13.23",
+    "echarts": "^5.0.2",
+    "env-cmd": "^10.1.0",
+    "fetch-jsonp": "^1.1.3",
+    "lodash-es": "^4.17.15",
+    "moment": "^2.27.0",
+    "prettier": "^2.2.1",
+    "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
+    "react-dom": "^16.13.1",
+    "react-photo-view": "^0.5.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-thunk": "^1.0.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "style-resources-loader": "^1.3.3",
+    "typescript": "^4.1.3",
+    "zarm": "^2.7.3"
+  },
+  "scripts": {
+    "dev": "env-cmd -e development react-app-rewired start",
+    "local": "env-cmd -e local react-app-rewired start",
+    "qa": "env-cmd -e qa react-app-rewired build",
+    "production": "env-cmd -e production react-app-rewired build",
+    "test": "react--app-rewired test",
+    "eject": "react-scripts eject",
+    "fix": "eslint --fix --ext .js,.ts,jsx,.tsx --ignore-path .gitignore ."
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@amap/amap-jsapi-loader": "^0.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.20.3",
+    "less": "^3.11.3",
+    "less-loader": "^6.2.0"
+  }
+}

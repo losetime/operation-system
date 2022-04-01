@@ -1,0 +1,191 @@
+.homepage-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    .user-header-wrap{
+        display: flex;
+        .user-info-wrap {
+            width: 810px;
+            padding: 0 20px;
+            background-color: #ffffff;
+            .say-hello {
+                padding: 0 10px;
+                height: 77px;
+                line-height: 77px;
+                border-bottom: 1px solid #EEEEEE;
+                font-size: 18px;
+            }
+            .user-info {
+                padding: 0 10px;
+                .user-name {
+                    height: 80px;
+                    .user-name-item {
+                        margin: 15px 0 15px 0;
+                        span:nth-child(1) {
+                            display: inline-block;
+                            width: 129px;
+                        }  
+                    }
+                }
+                .show-span {
+                    height: 30px;
+                    font-size: 14px;
+                    line-height: 30px;
+                    vertical-align: middle;
+                }
+                .info-handle {
+                    height: 50px;
+                    margin-top: 15px;
+                    .reset-pay-password {
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+        .pay-info-wrap{
+            width: 810px;
+            margin-left: 20px;
+            padding: 0 20px;
+            background-color: #ffffff;
+            .pay-hello {
+                height: 77px;
+                line-height: 77px;
+                padding: 0 10px;
+                border-bottom: 1px solid #EEEEEE;
+                font-size: 18px;
+            }
+            .pay-info{
+                justify-content: space-between;
+                padding: 0 10px;
+                .pay-name {
+                    height: 80px;
+                    .pay-name-item {
+                        margin: 15px 0 15px 0;  
+                        span:nth-child(1) {
+                            display: inline-block;
+                            width: 169px;
+                        }
+                        .show-Amount {
+                            height: 30px;
+                            color: #F84507;
+                            font-size: 30px;
+                            line-height: 30px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                .show-span {
+                    height: 30px;
+                    font-size: 14px;
+                    line-height: 30px;
+                    vertical-align: middle;
+                }
+                .pay-handle {
+                    height: 50px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+   
+    .payee-info-wrap {
+        padding: 20px;
+        background-color: #ffffff;
+        margin-top: 14px;
+        .info-title {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .content-wrap {
+            display: flex;
+            .bank-info {
+                .table-common-style
+            }
+            .slogan-wrap {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 84%;
+                    height: 144px;
+                }
+            }
+        }
+    }
+    .product-info-wrap {
+        padding: 20px;
+        background-color: #ffffff;
+        margin-top: 14px;
+        .info-title {
+            margin-bottom: 20px;
+            font-size: 18px;
+            
+        }
+        .content-wrap {
+            width: 100%;
+            display: flex;
+            .product-info {
+                .table-common-style
+            }
+            .QRcode-wrap {
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                padding: 0 40px;
+                .android-QRcode-wrap, .applet-QRcode-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 180px;
+                        height: 180px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table-common-style {
+    width: 50%;
+    border-top: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    div {
+        height: 50px;
+        line-height: 50px;
+        display: flex;
+        border-bottom: 1px solid #EEEEEE;
+        span:nth-child(1) {
+            display: inline-block;
+            width: 40%;
+            text-align: center;
+            border-right: 1px solid #EEEEEE;
+            font-size: 14px;
+            overflow: hidden;
+        }
+        span:nth-child(2) {
+            display: inline-block;
+            width: 60%;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    div:nth-child(1) {
+        height: 60px;
+        line-height: 60px;
+        span:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            img {
+                width: 214px;   
+                height: 40px;
+            }
+        }
+    }
+}

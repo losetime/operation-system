@@ -1,0 +1,64 @@
+.payFailure-wrapper {
+  width: 100%;
+  height: 100%;
+
+  .search-handle-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .statistics-wrap {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 14px 0 0 14px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999999;
+  }
+
+  .table-wrap {
+    height: calc(100% - 104px);
+    padding: 14px;
+    .table-body-calc(332px);
+  }
+}
+
+.payFailureDetail-wrapper {
+  width: 100%;
+  height: 100%;
+
+  .ant-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .ant-row {
+      width: 47%;
+
+      .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+        content: '';
+      }
+
+      .item-label {
+        display: flex;
+        .item-label-symbol {
+          color: red;
+          margin-left: 4px;
+        }
+      }
+
+      .ant-form-item-label {
+        text-align: left;
+        line-height: 16px;
+      }
+
+      margin-bottom: 20px;
+    }
+
+    .ant-form-item-extra {
+      font-size: 12px;
+      min-height: 0;
+    }
+  }
+}

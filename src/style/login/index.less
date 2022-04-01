@@ -1,0 +1,83 @@
+.login-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/images/loginBoxBg.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-color: #ffffff;
+    .login-content-wrap {
+        width: 80%;
+        height: 80%;
+        min-width: 1300px;
+        min-height: 600px;
+        background-image: url('../../assets/images/loginTextBg.png');
+        background-size: cover;
+        background-repeat:no-repeat;
+        .beta-icon {
+            margin: 18px 0 0 20px;
+        }
+        .login-form-wrap {
+            float: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            .login-logo {
+                width: 380px;
+                height: 65px;
+                display: flex;
+                margin-bottom:30px;
+                font-size: 30px;
+                font-weight: bold;
+                color: #4976E6;
+                img {
+                    height: 100%;
+                }
+            }
+            .login-form-content {
+                .username-form {
+                    display: flex;
+                    margin-bottom: 20px;
+                    .iconfont {
+                        font-size: 25px;
+                        margin: 10px 5px 0 0;
+                        color: #4976E6;
+                    }
+                    .ant-form-item {
+                        width: 355px;
+                        position: relative;
+                        &:after {
+                            content: '';
+                            width: 390px;
+                            height: 1px;
+                            position: absolute;
+                            top: 50px;
+                            left: -30px;
+                            background-color: #E9F1FC;
+                        }
+                        .ant-input {
+                            height: 50px;
+                            border: 1px solid #ffffff;
+                            font-size: 16px;
+                        }
+                    }
+                    .ant-form-item-has-error .ant-input:focus {
+                        box-shadow: 0 0 0 2px rgba(255, 255, 255, 1);
+                    }
+                }
+                .login-form-button {
+                    width: 380px;
+                    height: 50px;
+                    margin-top: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

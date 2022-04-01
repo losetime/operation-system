@@ -1,0 +1,127 @@
+.vehicle-wrapper {
+  width: 100%;
+  height: 100%;
+
+  ._search-handle-wrap {
+    .search-handle-wrap-top {
+      margin-bottom: 10px;
+    }
+
+    .search-handle-wrap-bottom {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .table-wrap {
+    height: calc(100% - 118px);
+    padding: 14px;
+    .table-body-calc(346px);
+  }
+}
+
+.vehicle-detail-dialog-wrap {
+  padding: 0 16px 0 16px;
+
+  .vehicle-drivingLicense {
+    .vehicle-drivingLicense-title {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      line-height: 32px;
+      color: @fontColorDark;
+
+      .drivingLicense-name {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .vehicle-status-source {
+        text-align: right;
+        display: flex;
+
+        .vehicle-source {
+          margin-right: 9px;
+        }
+
+        .ant-select {
+          width: 140px;
+          text-align: left;
+        }
+      }
+
+      margin-bottom: 11px;
+    }
+
+    .vehicle-drivingLicense-picture {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      margin-bottom: 12px;
+    }
+
+    .vehicle-drivingLicense-content {
+      .ant-form {
+        .ant-row {
+          .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+            content: '';
+          }
+          .item-label {
+            display: flex;
+            .item-label-symbol {
+              color: red;
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .divider-style {
+    margin: 20px 0 20px 0;
+    width: 1060px;
+    height: 1px;
+    background: #EEEEEE;
+  }
+
+  .vehicle-roadTransport {
+    .roadTransport-name {
+      font-size: 16px;
+      margin-bottom: 11px;
+      font-weight: bold;
+    }
+
+    .roadTransport-picture {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      margin-bottom: 12px;
+    }
+  }
+
+  .ant-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .ant-row {
+      width: 47%;
+
+      .ant-form-item-label {
+        text-align: left;
+      }
+
+      margin-bottom: 12px;
+    }
+
+    .ant-picker {
+      width: 100%;
+    }
+  }
+
+  .vehicle-handle-btn {
+    margin-right: 50px;
+  }
+}
